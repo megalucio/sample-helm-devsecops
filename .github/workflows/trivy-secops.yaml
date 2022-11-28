@@ -1,4 +1,4 @@
-name: ct-linting-and-testing
+name: trivy-security-scanning
 on: push
 
 permissions:
@@ -32,7 +32,6 @@ jobs:
           scan-ref: 'charts/sample-helm-devsecops'
           output: 'trivy-results.sarif'
           exit-code: '1'
-          severity: 'HIGH'
           ignore-unfixed: true
 
       - name: Upload Trivy scan results to GitHub Security tab
