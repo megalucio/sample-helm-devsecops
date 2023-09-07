@@ -31,12 +31,10 @@ jobs:
           scan-type: 'config'
           hide-progress: false
           format: 'sarif'
-          scan-ref: 'charts/'
           output: 'trivy-results.sarif'
           exit-code: '1'
-          severity: 'CRITICAL,HIGH'
           ignore-unfixed: true
-          image-ref: 'charts/'
+          severity: 'CRITICAL,HIGH'
 
       - name: Upload Trivy scan results to GitHub Security tab
         uses: github/codeql-action/upload-sarif@312e093a1892bd801f026f1090904ee8e460b9b6 # v2.1.34
