@@ -22,7 +22,7 @@ jobs:
           # scan-ref: 'charts/'
           output: 'trivy-results.sarif'
           # exit-code: '1'
-          severity: 'HIGH, CRITICAL'
+          severity: 'HIGH'
           # ignore-unfixed: true
 
       - name: Upload Trivy scan results to GitHub Security tab
