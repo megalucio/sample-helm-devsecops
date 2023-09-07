@@ -24,6 +24,7 @@ jobs:
           ignore-unfixed: true
           severity: 'CRITICAL,HIGH'
           image-ref: 'charts/sample-helm-devsecops'
+          scan-ref: 'charts/sample-helm-devsecops'
 
       # - name: Upload Trivy scan results to GitHub Security tab
       #   uses: github/codeql-action/upload-sarif@v2
